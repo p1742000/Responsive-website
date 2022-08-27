@@ -1,0 +1,53 @@
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: red;
+    }
+    header{
+        width: 100vw;
+    }
+    footer{
+        width: 100vw;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        /* align-items: center; */
+        justify-content: center;
+        margin: 12px 0;
+    }
+    ul{
+        font-size: 20px;
+    }
+    .search{
+        width: auto;
+        margin-bottom: 12px;
+    }
+    .cards{
+        flex-wrap: wrap;
+    } 
+}
+
+@media screen and (max-width: 850px) {
+    .number-of-cards{
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+    h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    input{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .search{
+        width: 90vw;
+    }
+}

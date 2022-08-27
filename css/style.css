@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100&family=Raleway:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    /* border: 1px solid red; */
+    font-family: 'Lato', sans-serif;
+    
+    
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;   /* if i keep align -items: center in img tag, then it is deteriorating....why ? */
+}
+
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+nav ul{
+    height: 58px;
+    /* padding: 0 23px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+nav ul li{
+    list-style: none;
+     padding: 0 23px;
+     /* color: white; */
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    font-weight: 800;
+    
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 30vw;
+}
+
+.search input{
+    width: 500px;
+    height: 22px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 16px 0 56px;
+    padding: 5px;
+}
+
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    background-color: white;
+    color: var(--main-bg-color);
+}
+.search button:hover{
+    font-weight: bolder;
+}
+
+/* MAIN SECTION STYLING */
+
+.container{
+    padding: 50px;
+    /* background-color: aqua; */
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+.slider{
+    padding: 20px;
+    width: 80vw !important;
+    margin: auto;
+    /* background-color: blue; */
+    overflow: hidden;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+.slider img{
+    /* width: 50%; */
+    
+    /* HERE, WHY WITHOUT DISPLAY FLEX, MARGIN AUTO IS NOT WORKING ? */
+    display: flex;
+    margin: auto;
+}
+
+.cards{
+    margin-top: 20px;
+}
+.card{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 160px;
+    padding: 4px;
+    overflow: hidden;
+}
+h2{
+    margin-bottom: 10px;
+}
+.lines p{
+    margin: 2px 0;
+    text-align: center;
+}
+.number-of-cards{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    
+    border: 1px solid black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
